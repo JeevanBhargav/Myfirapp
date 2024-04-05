@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Myfirapp';
+  title = 'HospitalManagementSystem';
+  someValue:string ="";
+  someValues:string[] = [];
+ 
+  CallSomeLogic(str:string) {
+    this.someValues.push(str);
+    this.someValue="";
+  }
 }
